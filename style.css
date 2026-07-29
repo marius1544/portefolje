@@ -90,14 +90,14 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    display: block;
+    display: flex;
 }
 
 
 /* Video */
 .video-card video {
     width: 100%;
-    display: block;
+    display: flex;
     background: black;
 }
 
@@ -197,4 +197,88 @@ body {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
+}
+
+
+/* ===== Prosjektside (detaljvisning) ===== */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 30px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #0066ff;
+}
+
+.project-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.project-page h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+.project-page .subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+.project-hero {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    margin-bottom: 40px;
+    background: #000;
+}
+
+.project-hero img,
+.project-hero video {
+    width: 100%;
+    display: block;
+}
+
+.project-page h2 {
+    font-size: 1.4rem;
+    margin: 35px 0 15px;
+    color: #111;
+}
+
+.project-page p {
+    color: #444;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.project-page .tags {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.project-page ul {
+    margin: 0 0 20px 20px;
+    color: #444;
+}
+
+.project-page ul li {
+    margin-bottom: 8px;
+}
+
+.open-button {
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
