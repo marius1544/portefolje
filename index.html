@@ -1,320 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Portefølje</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Porteføljen til Marius Hansen – fullstack-utvikling, skyarkitektur og digital design.">
+  <title>Marius Hansen Portfolio – Minimal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<section class="portfolio">
-
-    <h1>Min Portefølje</h1>
-
-
-    <!-- Prosjekter -->
-    <div class="intro">
-
-        <h2>Prosjekter</h2>
-
-        <p>
-            Her vises noen av mine større utviklings- og designprosjekter,
-            med fokus på frontend, backend, brukeropplevelse og visuell identitet.
-        </p>
-
+<main>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top">Marius Hansen</a>
+      <nav aria-label="Hovednavigasjon">
+        <a href="#prosjekter">Prosjekter</a>
+        <a href="#kompetanse">Kompetanse</a>
+        <a href="#om">Om</a>
+      </nav>
     </div>
+  </header>
 
-
-
-    <div class="gallery">
-
-
-        <!-- Jobbguru -->
-        <div class="card">
-
-            <h3>Jobbguru</h3>
-
-            <p>
-                Bachelorprosjekt hvor jeg utviklet en komplett bookingplattform
-                for en karriereveileder. Prosjektet inkluderte frontend,
-                backend, database, AWS Lambda, API Gateway, autentisering,
-                SMS-verifisering, adminpanel og responsivt design.
-            </p>
-
-
-            <a href="https://jobbguru.no/" target="_blank" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-        </div>
-
-
-
-        <!-- Admin Dashboard -->
-        <div class="card">
-
-            <h3>Admin Dashboard</h3>
-
-            <p>
-                Administrasjonssystem utviklet for håndtering av bookinger,
-                kalender, tilgjengelige tider og brukeradministrasjon.
-                Løsningen benytter REST API, autentisering og CRUD-funksjonalitet.
-            </p>
-
-
-            <a href="project-admin-dashboard.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-        </div>
-
-
-
-        <!-- Design -->
-        <div class="card">
-
-            <h3>Design & Branding</h3>
-
-            <p>
-                Utvikling av logo, visuell identitet, illustrasjoner,
-                ikoner og komplett designsystem. Arbeidet inkluderte
-                konseptutvikling og produksjon i figma.
-            </p>
-
-
-            <a href="https://www.figma.com/design/6EnxYIgn2rN3gzo7UI6O8j/Untitled?node-id=0-1&p=f&t=YdnngeG1ZB9WtAyv-0" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-        </div>
-
-
+  <section class="hero container" id="top">
+    <div class="hero-text">
+      <p class="overline">Fullstack-utvikler og digital designer</p>
+      <h1>Marius Hansen</h1>
+      <p class="lead">Jeg utvikler digitale løsninger fra idé til ferdig produkt, med erfaring innen frontend, backend, skyarkitektur og visuell design.</p>
+      <div class="hero-links">
+        <a class="primary-link" href="#prosjekter">Se prosjekter</a>
+        <a class="secondary-link" href="https://jobbguru.no/" target="_blank" rel="noreferrer">Besøk Jobbguru ↗</a>
+      </div>
     </div>
+    <img class="portrait" src="bilder/marius.webp" alt="Marius Hansen">
+  </section>
 
-
-
-
-
-    <!-- Internship -->
-    <div class="intro">
-
-        <h2>Internship og kreative prosjekter</h2>
-
-        <p>
-            Under mitt internship hos Applica jobbet jeg med visuell kommunikasjon,
-            3D-modellering, animasjon og digitalt design. Prosjektene under viser
-            arbeid med video, grafikk og 3D-produksjon, hvor jeg fikk erfaring med
-            å utvikle konsepter fra idé til ferdig produkt.
-        </p>
-
+  <section class="section container" id="prosjekter">
+    <div class="section-title">
+      <p class="overline">Utvalgt prosjekt</p>
+      <h2>Jobbguru</h2>
     </div>
+    <article class="featured-project">
+      <img src="bilder/jobbguru.webp" alt="Forsiden til Jobbguru">
+      <div class="featured-copy">
+        <p class="project-category">Bachelorprosjekt · Fullstack</p>
+        <h3>Komplett bookingplattform for en karriereveileder.</h3>
+        <p>Jeg utviklet frontend, backend, database og integrasjoner. Løsningen inkluderer bookingflyt, administrasjonspanel, autentisering, SMS-verifisering og serverløs arkitektur i AWS.</p>
+        <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>AWS Lambda</li><li>API Gateway</li><li>MySQL</li></ul>
+        <a class="text-action" href="https://jobbguru.no/" target="_blank" rel="noreferrer">Åpne prosjektet ↗</a>
+      </div>
+    </article>
 
-
-
-
-    <!-- Videoer -->
-    <div class="video-grid">
-
-
-        <div class="video-card">
-
-            <video controls>
-
-                <source src="bilder/1.19 Landing video.mp4" type="video/mp4">
-
-                Nettleseren din støtter ikke video.
-
-            </video>
-
-
-            <h3>Landing Video – Applica Internship</h3>
-
-
-            <p>
-                En animert landing video utviklet under internship hos Applica.
-                Arbeidet inkluderte idéutvikling, visuell design, animasjon og
-                ferdigstilling av en digital presentasjon.
-            </p>
-
-
-            <a href="project-landing-video.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <div class="video-card">
-
-
-            <video controls>
-
-                <source src="bilder/Pepsi.mov" type="video/quicktime">
-
-                Nettleseren din støtter ikke video.
-
-            </video>
-
-
-            <h3>Pepsi – Videoproduksjon</h3>
-
-
-            <p>
-                Et prosjekt med fokus på filming, klipping og visuell historiefortelling.
-                Her jobbet jeg med å sette sammen ulike klipp til en helhetlig video.
-            </p>
-
-
-            <a href="project-pepsi.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
+    <div class="archive-heading">
+      <h2>Flere arbeider</h2>
+      <p>Klikk «Les mer» for en kort prosjektbeskrivelse.</p>
     </div>
-
-
-
-
-
-
-    <!-- Bilder -->
-    <div class="gallery">
-
-
-
-        <div class="card">
-
-            <img src="bilder/forside.png" alt="Forside">
-
-
-            <h3>Forside</h3>
-
-
-            <p>
-                Designarbeid med fokus på layout, visuell identitet og presentasjon.
-            </p>
-
-
-            <a href="project-forside.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <div class="card">
-
-            <img src="bilder/Foto av Marius.JPG" alt="Foto av Marius">
-
-
-            <h3>Fotografi</h3>
-
-
-            <p>
-                Fotografiske arbeider med fokus på komposisjon, lys og uttrykk.
-            </p>
-
-
-            <a href="project-fotografi.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <div class="card">
-
-            <img src="bilder/logo lotusblomst.png" alt="Logo">
-
-
-            <h3>Logo Design</h3>
-
-
-            <p>
-                Utvikling av logo og visuell identitet med fokus på symbolikk og enkelhet.
-            </p>
-
-
-            <a href="project-logo.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <div class="card">
-
-            <img src="bilder/lotusblomst flamme.png" alt="Lotusblomst">
-
-
-            <h3>Illustrasjon</h3>
-
-
-            <p>
-                Digital illustrasjon utviklet med fokus på form, farge og kreativt uttrykk.
-            </p>
-
-
-            <a href="project-illustrasjon.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
-
-
-
-        <div class="card">
-
-            <img src="bilder/plane_Blender.gif" alt="Blender-animasjon">
-
-
-            <h3>3D-animasjon – Flymodell</h3>
-
-
-            <p>
-                En 3D-modell av et fly utviklet under internship hos Applica.
-                Prosessen inkluderte modellering, teksturering, animasjon og
-                optimalisering for digital visning.
-            </p>
-
-
-            <a href="project-3d-animasjon.html" class="open-button">
-                Åpne prosjekt →
-            </a>
-
-
-        </div>
-
-
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/jobbguru.webp" alt="Admin Dashboard – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">Utvikling</p><h3>Admin Dashboard</h3><p>Administrasjonssystem for bookinger, kalender, tilgjengelige tider og brukere.</p><details><summary>Les mer</summary><p>Bygget med REST API, autentisering, rollebasert tilgang og CRUD-funksjonalitet mot MySQL.</p><ul class="tags compact"><li>REST API</li><li>JWT</li><li>CRUD</li><li>MySQL</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><video src="bilder/landing-video.mp4" controls playsinline preload="metadata" aria-label="Landing Video – video"></video></div>
+        <div class="project-body"><p class="project-category">Motion design</p><h3>Landing Video</h3><p>Animert introduksjon utviklet under internship hos Applica.</p><details><summary>Les mer</summary><p>Prosjektet gikk fra idé og storyboard til visuell utforming, animasjon og eksport for nett.</p><ul class="tags compact"><li>Animasjon</li><li>Storyboard</li><li>Video</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/lotus-logo.webp" alt="Design og Branding – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">Design</p><h3>Design &amp; Branding</h3><p>Logo, illustrasjoner og et sammenhengende visuelt uttrykk.</p><details><summary>Les mer</summary><p>Arbeidet omfattet konseptutvikling, symbolikk, farger, typografi og gjenbrukbare designkomponenter.</p><ul class="tags compact"><li>Figma</li><li>Branding</li><li>Designsystem</li></ul><a class="text-action" href="https://www.figma.com/design/6EnxYIgn2rN3gzo7UI6O8j/Untitled?node-id=0-1&p=f&t=YdnngeG1ZB9WtAyv-0" target="_blank" rel="noreferrer">Åpne i Figma ↗</a></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><video src="bilder/pepsi.mp4" controls playsinline preload="metadata" aria-label="Pepsi – video"></video></div>
+        <div class="project-body"><p class="project-category">Videoproduksjon</p><h3>Pepsi</h3><p>Filming og klipping med fokus på rytme og visuell historiefortelling.</p><details><summary>Les mer</summary><p>Råmaterialet ble strukturert, klippet og fargekorrigert til en kort og helhetlig presentasjon.</p><ul class="tags compact"><li>Filming</li><li>Klipp</li><li>Fargekorrigering</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/plane.webp" alt="3D-flymodell – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">3D</p><h3>3D-flymodell</h3><p>Modellering, teksturering og animasjon i Blender.</p><details><summary>Les mer</summary><p>Flymodellen ble utviklet fra grunnform til ferdig animasjon og optimalisert for digital visning.</p><ul class="tags compact"><li>Blender</li><li>3D-modellering</li><li>Animasjon</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/lotus-logo.webp" alt="Lotus-logo – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">Visuell identitet</p><h3>Lotus-logo</h3><p>En enkel logo bygget rundt lotusblomsten som symbol.</p><details><summary>Les mer</summary><p>Prosessen gikk fra skisser og valg av symbolikk til farge, typografi og ferdig logo.</p><ul class="tags compact"><li>Illustrator</li><li>Logo</li><li>Branding</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/lotus-illustration.webp" alt="Lotus og flamme – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">Illustrasjon</p><h3>Lotus &amp; flamme</h3><p>Digital illustrasjon med fokus på form, farge og kontrast.</p><details><summary>Les mer</summary><p>Motivet undersøker kontrasten mellom den rolige lotusblomsten og en mer dynamisk flammeform.</p><ul class="tags compact"><li>Procreate</li><li>Illustrasjon</li><li>Digital kunst</li></ul></details></div>
+      </article>
+      <article class="project-card">
+        <div class="project-media"><img src="bilder/marius.webp" alt="Fotografi – prosjektbilde"></div>
+        <div class="project-body"><p class="project-category">Foto</p><h3>Fotografi</h3><p>Fotografisk arbeid med fokus på lys, komposisjon og uttrykk.</p><details><summary>Les mer</summary><p>Bildet er arbeidet frem gjennom valg av utsnitt, lyssetting og etterbehandling i Lightroom.</p><ul class="tags compact"><li>Fotografi</li><li>Lightroom</li><li>Bilderedigering</li></ul></details></div>
+      </article>
     </div>
+  </section>
 
+  <section class="skills-section" id="kompetanse">
+    <div class="container skills-layout">
+      <div class="section-title"><p class="overline">Kompetanse</p><h2>Teknologi og design</h2></div>
+      <div class="skill-grid">
+        <div><h3>Frontend</h3><p>HTML, CSS, JavaScript, SPA, responsivt design og UX/UI.</p></div>
+        <div><h3>Backend</h3><p>Node.js, Express, REST API, CRUD, datamodellering og MySQL.</p></div>
+        <div><h3>Sky</h3><p>AWS Lambda, API Gateway, autentisering, JWT, Clerk og Cloudflare.</p></div>
+        <div><h3>Visuelt</h3><p>Figma, Adobe Creative Cloud, foto, video, animasjon og Blender.</p></div>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <section class="about section container" id="om">
+    <div class="section-title"><p class="overline">Om meg</p><h2>Fra struktur til brukeropplevelse</h2></div>
+    <div class="about-copy">
+      <p>Jeg har en bachelorgrad i multimedieteknologi og -design fra Universitetet i Agder. Studiet har gitt meg erfaring med utvikling, systemintegrasjon, API-er, digital publisering og visuell kommunikasjon.</p>
+      <dl><div><dt>2025–2026</dt><dd>Bachelorprosjekt · Jobbguru</dd></div><div><dt>Internship</dt><dd>Applica · motion design, 3D og visuell kommunikasjon</dd></div></dl>
+    </div>
+  </section>
 
-
+  <footer><div class="container footer-inner"><strong>Marius Hansen</strong><span>Fullstack-utvikling · skyarkitektur · digital design</span><a href="#top">Til toppen ↑</a></div></footer>
+</main>
 </body>
 </html>
