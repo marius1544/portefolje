@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DBNow – pay-as-you-go PostgreSQL på AWS Aurora Serverless v2, utviklet av Marius Hansen.">
+  <title>DBNow | Marius Hansen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="index.html">Marius Hansen</a>
+      <a class="case-back" href="index.html#prosjekter">← Tilbake til prosjekter</a>
+    </div>
+  </header>
+
+  <main class="case-page dbnow-page">
+    <section class="case-intro container">
+      <div>
+        <p class="overline">SaaS · Backend · AWS</p>
+        <h1>DBNow</h1>
+      </div>
+      <div>
+        <p>Temporary PostgreSQL for agenter, CI og utvikling. Databaser opprettes gjennom et API, får egne tilkoblingsdata og slettes automatisk når den valgte tiden utløper.</p>
+        <span class="case-badge">Fungerende MVP · Videreutvikles</span>
+      </div>
+    </section>
+
+    <section class="case-hero container dbnow-case-hero" aria-label="Eksempel på API-kall til DBNow">
+      <div class="dbnow-console-bar">
+        <div class="dbnow-console-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+        <strong>DBNow API</strong>
+        <span>eu-north-1</span>
+      </div>
+      <div class="dbnow-console">
+        <div class="dbnow-console-request">
+          <p><span>POST</span> /v1/databases</p>
+          <pre><code>{
+  "name": "preview-db",
+  "expires_in": "1h",
+  "allowed_cidr": "203.0.113.10/32"
+}</code></pre>
+        </div>
+        <div class="dbnow-console-response">
+          <span class="dbnow-status">201 CREATED</span>
+          <h2>PostgreSQL klar når du trenger den.</h2>
+          <div class="dbnow-response-grid">
+            <div><small>Status</small><strong>ready</strong></div>
+            <div><small>Versjon</small><strong>PostgreSQL 17</strong></div>
+            <div><small>Utløper</small><strong>om 1 time</strong></div>
+            <div><small>Reservert kostnad</small><strong>$0.05</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-grid container">
+      <aside class="case-facts">
+        <div><span>Rolle</span><b>Backend og skyarkitektur</b></div>
+        <div><span>Runtime</span><b>Node.js</b></div>
+        <div><span>Database</span><b>Aurora PostgreSQL 17</b></div>
+        <div><span>Region</span><b>AWS Stockholm · eu-north-1</b></div>
+      </aside>
+      <div class="case-copy">
+        <p class="overline">Om prosjektet</p>
+        <h2>Midlertidige databaser uten tungt oppsett.</h2>
+        <p>DBNow er en pay-as-you-go-tjeneste for å opprette isolerte PostgreSQL-databaser gjennom et REST API. Hver database får egne tilkoblingsdata, tidsbegrenset levetid og et kostnadsestimat før ressursene reserveres.</p>
+        <p>MVP-en kjører mot Aurora Serverless v2 i AWS Stockholm og bruker Data API. Jeg har utviklet flyten fra helsesjekk og kontroll av Aurora-klyngen til oppretting av databaser, tilgangsstyring og automatisk sletting etter TTL.</p>
+      </div>
+    </section>
+
+    <section class="case-feature-section">
+      <div class="container">
+        <p class="overline">Funksjoner</p>
+        <div class="case-features">
+          <div><span>01</span><h3>API-oppretting</h3><p>En ny database opprettes med navn, levetid og tillatt IP-område i ett API-kall.</p></div>
+          <div><span>02</span><h3>Isolert tilgang</h3><p>Hver database får egne brukerdetaljer og en separat tilkoblingsadresse.</p></div>
+          <div><span>03</span><h3>TTL-sletting</h3><p>Databasen har et definert utløp og fjernes automatisk når tiden er ute.</p></div>
+          <div><span>04</span><h3>Kostnadsestimat</h3><p>Responsen viser reserverte timer og beregnet pris for den valgte levetiden.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
