@@ -223,30 +223,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
 .dropsafe-cover-copy > strong { max-width: 290px; margin: 8px 0 12px; font-size: clamp(1.8rem, 4vw, 3.1rem); line-height: .98; letter-spacing: -.05em; }
 .dropsafe-cover-copy small { color: #625c72; font-size: .68rem; }
 
-/* DBNow */
-.dbnow-cover {
-  padding: 0;
-  background:
-    radial-gradient(circle at 78% 22%, rgba(52, 211, 153, .17), transparent 29%),
-    linear-gradient(145deg, #101716 0%, #111f1c 52%, #0b1211 100%);
-  color: #f4fbf8;
-}
-.dbnow-cover-top {
-  height: 54px;
-  padding: 0 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(191, 255, 229, .13);
-}
-.dbnow-cover-top strong { font-size: .88rem; letter-spacing: -.02em; }
-.dbnow-cover-top span { padding: 3px 7px; border: 1px solid rgba(191, 255, 229, .24); border-radius: 999px; color: #8ee6c1; font-size: .58rem; font-weight: 800; letter-spacing: .1em; }
-.dbnow-cover-copy { height: calc(100% - 54px); padding: 42px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
-.dbnow-cover-copy > span { color: #79ddb4; font-size: .62rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-.dbnow-cover-copy > strong { max-width: 360px; margin: 8px 0 12px; font-size: clamp(1.9rem, 4vw, 3.35rem); line-height: .98; letter-spacing: -.055em; }
-.dbnow-cover-copy small { color: #9caaa5; font-size: .68rem; }
-.dbnow-cover .project-state { background: #70e0b1; color: #0a1511; }
-
 /* Statiske prosjektsider */
 .case-back { color: var(--muted); font-size: .84rem; text-decoration: none; }
 .case-page { min-height: 100vh; }
@@ -282,29 +258,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
 .case-features h3 { margin: 0 0 10px; font-size: 1rem; }
 .case-features p { margin: 0; color: var(--muted); font-size: .82rem; }
 
-.dbnow-case-hero { padding: 0; background: #0b1211; color: #eef8f4; border-color: #24322e; }
-.dbnow-console-bar { height: 58px; padding: 0 24px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; border-bottom: 1px solid #26342f; color: #9eaaa6; font-size: .72rem; }
-.dbnow-console-bar > strong { color: #edf8f3; font-size: .78rem; text-align: center; }
-.dbnow-console-bar > span:last-child { justify-self: end; }
-.dbnow-console-lights { display: flex; gap: 7px; }
-.dbnow-console-lights span { width: 8px; height: 8px; border-radius: 50%; background: #3a4a45; }
-.dbnow-console-lights span:nth-child(2) { background: #547466; }
-.dbnow-console-lights span:nth-child(3) { background: #69c69e; }
-.dbnow-console { min-height: 520px; padding: clamp(34px, 6vw, 72px); display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(38px, 7vw, 88px); align-items: center; }
-.dbnow-console-request { padding: 26px; border: 1px solid #2a3b35; border-radius: 11px; background: rgba(255,255,255,.025); box-shadow: 0 26px 70px rgba(0,0,0,.2); }
-.dbnow-console-request p { margin: 0 0 22px; color: #a9b4b0; font: 700 .77rem/1.4 monospace; }
-.dbnow-console-request p span { margin-right: 8px; color: #74deb2; }
-.dbnow-console-request pre { margin: 0; overflow: auto; color: #b9c7c1; font-size: clamp(.72rem, 1.4vw, .86rem); line-height: 1.8; }
-.dbnow-console-response > h2 { max-width: 590px; margin: 13px 0 32px; font-size: clamp(2.7rem, 5vw, 5.25rem); line-height: .95; letter-spacing: -.062em; font-weight: 600; }
-.dbnow-status { color: #74deb2; font-size: .63rem; font-weight: 800; letter-spacing: .12em; }
-.dbnow-response-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid #2a3b35; border-left: 1px solid #2a3b35; }
-.dbnow-response-grid > div { padding: 16px; display: flex; flex-direction: column; border-right: 1px solid #2a3b35; border-bottom: 1px solid #2a3b35; }
-.dbnow-response-grid small { color: #7f8e88; font-size: .64rem; }
-.dbnow-response-grid strong { margin-top: 4px; color: #dce9e3; font: 600 .79rem/1.4 monospace; }
-
 @media (max-width: 850px) {
-  .case-intro, .case-grid, .dropsafe-case-content, .dbnow-console { grid-template-columns: 1fr; }
-  .case-intro, .case-grid, .dropsafe-case-content, .dbnow-console { gap: 48px; }
+  .case-intro, .case-grid, .dropsafe-case-content { grid-template-columns: 1fr; }
+  .case-intro, .case-grid, .dropsafe-case-content { gap: 48px; }
   .case-intro { align-items: start; }
   .dropsafe-case-content { padding: 42px; }
   .case-features { grid-template-columns: repeat(2, 1fr); }
@@ -322,11 +278,6 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
   .case-features, .case-features-three { grid-template-columns: 1fr; }
   .case-features > div { min-height: 190px; }
   .case-features span { margin-bottom: 32px; }
-  .dbnow-console { padding: 30px 20px; }
-  .dbnow-console-bar { grid-template-columns: auto 1fr; }
-  .dbnow-console-bar > strong { justify-self: end; }
-  .dbnow-console-bar > span:last-child { display: none; }
-  .dbnow-response-grid { grid-template-columns: 1fr; }
 }
 
 /* Applica internship */
@@ -420,30 +371,4 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
   .applica-gallery-section { padding-bottom: 78px; }
   .applica-video-frame { padding: 7px; }
   .applica-gallery { grid-template-columns: 1fr; gap: 18px; }
-}
-
-/* Buss og tog-app */
-.transport-cover {
-  background: #f0f0f0;
-}
-.transport-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-.transport-case-hero {
-  padding: clamp(18px, 4vw, 54px);
-  background: #f0f0f0;
-}
-.transport-case-hero img {
-  width: min(100%, 1040px);
-  margin-inline: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 620px) {
-  .transport-case-hero {
-    padding: 10px;
-  }
 }
