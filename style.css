@@ -455,6 +455,11 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
 .search-query span { color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; }
 .search-query strong { font-size: 1rem; line-height: 1.5; }
 .search-query small { margin-top: auto; color: var(--muted); font-size: .7rem; }
+.search-result { min-height: 330px; padding: 30px; display: grid; place-items: center; background: #f7f7f5; }
+.result-quote { width: min(560px, 100%); padding: 24px 22px; border: 1px solid var(--line); background: #fff; }
+.result-badge { display: inline-block; margin-bottom: 12px; padding: 6px 8px; border: 1px solid var(--line); color: var(--muted); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase; }
+.result-quote p { margin: 0; font-size: 1rem; line-height: 1.7; color: var(--text); }
+.result-quote a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .screenshot-placeholder { min-height: 330px; padding: 30px; display: grid; place-items: center; background: #f7f7f5; }
 .screenshot-placeholder > div { width: min(560px, 100%); min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 1px dashed #bfc2be; color: var(--muted); }
 .screenshot-placeholder span { display: grid; width: 42px; height: 42px; place-items: center; margin-bottom: 12px; border: 1px solid var(--line); border-radius: 50%; font-size: 1.3rem; }
