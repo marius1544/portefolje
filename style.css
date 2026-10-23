@@ -234,6 +234,26 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
 .dropsafe-cover-copy small { color: #625c72; font-size: .68rem; }
 
 /* Statiske prosjektsider */
+.project-page {
+  width: min(100% - 48px, 960px);
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 64px) 0 88px;
+}
+.project-page .back-link { display: inline-flex; margin-bottom: clamp(36px, 7vw, 76px); color: var(--link); font-size: .86rem; font-weight: 650; text-underline-offset: 4px; }
+.project-page h1 { max-width: 900px; margin: 0; font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: 1; letter-spacing: -.065em; }
+.project-page .subtitle { max-width: 680px; margin: 14px 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.65; }
+.project-page .project-hero { margin: 36px 0 50px; padding: clamp(10px, 2vw, 20px); overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.project-page .project-hero > a { display: block; cursor: zoom-in; }
+.project-page .project-hero > a:focus-visible { outline: 3px solid #7693a0; outline-offset: 4px; }
+.project-page .project-hero img, .project-page .project-hero video { width: 100%; max-height: min(76vh, 840px); object-fit: contain; background: var(--surface); }
+.project-page .project-hero figcaption { margin-top: 10px; color: var(--muted); font-size: .78rem; text-align: center; }
+.project-page h2 { margin: 42px 0 12px; padding-top: 22px; border-top: 1px solid var(--line); font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; letter-spacing: -.035em; }
+.project-page > p:not(.subtitle) { max-width: 760px; color: var(--muted); line-height: 1.8; }
+.project-page > ul:not(.tags) { max-width: 760px; margin: 0; padding-left: 22px; color: var(--muted); }
+.project-page > ul:not(.tags) li { padding: 6px 0; }
+.project-page .tags { max-width: 760px; margin: 12px 0 0; }
+.project-page .tags span { padding: 5px 9px; border: 1px solid var(--line); color: var(--muted); font-size: .76rem; }
+.magazine-page .project-hero { width: min(520px, 100%); margin: 24px auto; }
 .case-back { color: var(--muted); font-size: .84rem; text-decoration: none; }
 .case-page { min-height: 100vh; }
 .case-intro { padding-block: 94px 72px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 90px; align-items: end; }
