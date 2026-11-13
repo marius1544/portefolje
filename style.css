@@ -280,6 +280,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #7693a0; outline-off
 .case-facts b { font-size: .86rem; }
 .case-copy h2 { margin: 12px 0 26px; font-size: clamp(2.4rem, 4.5vw, 4.3rem); line-height: 1.03; letter-spacing: -.055em; }
 .case-copy > p:not(.overline) { color: var(--muted); line-height: 1.8; }
+.case-actions { margin-top: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
 .website-project-list { padding-bottom: 110px; }
 .website-project-item { display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; gap: 28px; align-items: start; padding: 30px 0; border-top: 1px solid var(--line); }
 .website-project-item:last-child { border-bottom: 1px solid var(--line); }
